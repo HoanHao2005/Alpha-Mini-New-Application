@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎵 Phát nhạc MP3 nội bộ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:paddingBottom="12dp" />
+
+        <!-- Trạng thái phát nhạc -->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đã sẵn sàng"
+            android:textSize="14sp"
+            android:textColor="#1565C0"
+            android:background="#E3F2FD"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Các nút điều khiển -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playPrevSong"
+                android:text="⏮ Lui"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:background="#9E9E9E"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="2dp" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playCurrentSong"
+                android:text="▶ Phát"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playNextSong"
+                android:text="Tiếp ⏭"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:background="#2196F3"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="stopAudio"
+                android:text="⏹ Dừng"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:background="#F44336"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="2dp" />
+
+        </LinearLayout>
+
+        <!-- Nút Dance Enable -->
+        <Switch
+            android:id="@+id/switch_dance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💃 Kèm hành động nhảy múa"
+            android:textSize="14sp"
+            android:textColor="#388E3C"
+            android:checked="true"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Hướng dẫn -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách bài hát có sẵn trong App:"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:paddingBottom="4dp" />
+
+        <!-- Danh sách file MP3 -->
+        <TextView
+            android:id="@+id/tv_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đang tải danh sách..."
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Hướng dẫn sử dụng cho Developer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Hướng dẫn thêm nhạc mới:\nCopy file .mp3 vào source code thư mục: app/src/main/res/raw/ rồi build lại ra file APK mới.\nTên file không được có dấu cách hay viết hoa."
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:background="#FFFDE7"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
