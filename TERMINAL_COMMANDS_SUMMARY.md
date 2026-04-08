@@ -6,7 +6,7 @@ Dưới đây là một số dòng lệnh quan trọng mà chúng ta đã sử d
 Chúng tôi đã gói gọn tất cả mọi thao tác phức tạp vào một shell script là `build_and_install.sh`. Bất cứ khi nào bạn sửa code hoặc đổi nhạc, bạn chỉ cần gõ duy nhất lệnh này:
 
 ```bash
-cd /home/hoanhao/ubt_alphamini_app_demo
+cd /home/ubt_alphamini_app_demo
 ./build_and_install.sh
 ```
 
@@ -20,7 +20,7 @@ cd /home/hoanhao/ubt_alphamini_app_demo
 Nếu máy tính của bạn sử dụng phiên bản Java quá cao (như Java 21) bạn **BUỘC PHẢI** hạ xuống Java 11 trước khi gõ các lệnh của bộ `gradlew` AlphaMini.
 ```bash
 # Trỏ đường dẫn tới bản JDK 11 local
-export JAVA_HOME=/home/hoanhao/ubt_alphamini_app_demo/jdk-11.0.11+9
+export JAVA_HOME=/home/ubt_alphamini_app_demo/jdk-11.0.11+9
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
