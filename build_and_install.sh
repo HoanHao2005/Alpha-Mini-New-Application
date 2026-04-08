@@ -22,10 +22,10 @@ if [ $? -eq 0 ]; then
     adb install -r app/build/outputs/apk/debug/app-debug.apk
     
     if [ $? -eq 0 ]; then
-        echo "✅ Thao tác nạp app lên robot AlphaMini thành công!"
+        echo " Thao tác nạp app lên robot AlphaMini thành công!"
     else
-        echo "❌ Lỗi khi nạp app lên robot. Hãy kiểm tra kết nối ADB (Vysor)."
+        echo " Lỗi khi nạp app lên robot. Hãy kiểm tra kết nối ADB (Vysor)."
     fi
 else
-    echo "❌ Build thất bại. Hãy kiểm tra lại tên file nhạc (.mp3) trong res/raw xem có bị viết hoa/khoảng trắng không."
+    echo " Build thất bại. Hãy kiểm tra lại tên file nhạc (.mp3) trong res/raw xem có bị viết hoa/khoảng trắng không."
 fi
