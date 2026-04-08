@@ -2,7 +2,7 @@
 
 Dự án này là module nâng cấp dành cho robot UBTech AlphaMini, cho phép robot tự động phát nhạc MP3 từ bộ nhớ cục bộ (bên trong file APK) và đồng bộ với các điệu nhảy lập trình sẵn.
 
-## 🌟 Tính Năng Chính
+##  Tính Năng Chính
 - **Phát nhạc nội bộ:** MP3 được nhúng thẳng vào file APK (thư mục `res/raw`), thân thiện với Người Dùng Cuối (không cần biết copy nhạc vào SD card).
 - **Đồng bộ hóa:** Đồng bộ cử động nhảy (`ActionApi.playAction`) ngay lúc âm thanh (`MediaPlayer`) hoạt động. Tự động kết thúc nhảy khi hết bài.
 - **Tuỳ chọn:** Cho phép người dùng bật/tắt hành động nhảy thông qua Switch UI.
@@ -10,7 +10,7 @@ Dự án này là module nâng cấp dành cho robot UBTech AlphaMini, cho phép
 
 ---
 
-## 👨‍💻 Hướng Dẫn Dành Cho Developer
+##  Hướng Dẫn Dành Cho Developer
 
 ### 1. Kiến Trúc Hoạt Động
 - **Giao diện (UI):** `PlayAudioActivity.java` và `activity_play_audio.xml`.
@@ -37,12 +37,12 @@ Nếu bạn biên dịch trên máy cá nhân, hãy dùng **JDK 11** để trán
 
 ---
 
-## 🧑‍🤝‍🧑 Hướng Dẫn Sử Dụng (Dành Cho Khách Hàng)
+##  Hướng Dẫn Sử Dụng (Dành Cho Khách Hàng)
 
 Sau khi lập trình viên (Dev) đã cài ứng dụng (file APK) có chứa nhạc lên robot của bạn, bạn sử dụng cực kỳ dễ dàng theo 3 bước:
 1. **Bật Robot:** Đảm bảo kết nối Vysor để bấm thao tác màn hình AlphaMini.
-2. **Khởi động tính năng:** Trong ứng dụng chính, cuộn xuống và nhấn nút **"🎵 Play Audio Test"**.
+2. **Khởi động tính năng:** Trong ứng dụng chính, cuộn xuống và nhấn nút **" Play Audio Test"**.
 3. **Thưởng thức:**
-   - Chọn bài nhạc bằng nút **"Tiếp ⏭"** và **"⏮ Lui"**.
-   - Có thể chạm công tắc **"💃 Kèm hành động nhảy múa"** để tắt điệu nhảy nếu chỉ muốn robot phát loa ngoài đứng yên.
-   - Bấm **"▶ Phát"** và đợi robot biểu diễn. Bấm **"⏹ Dừng"** bất cứ khi nào bạn muốn robot nghỉ.
+   - Chọn bài nhạc bằng nút **"Tiếp "** và **" Lui"**.
+   - Có thể chạm công tắc **" Kèm hành động nhảy múa"** để tắt điệu nhảy nếu chỉ muốn robot phát loa ngoài đứng yên.
+   - Bấm **" Phát"** và đợi robot biểu diễn. Bấm **" Dừng"** bất cứ khi nào bạn muốn robot nghỉ.
